@@ -244,7 +244,12 @@ The project we convened on tackling is Track 3 Idea 4: a cultural online "guessr
 
 **Q3: Which third-party API(s) will you integrate into your project? What data will you pull from the API(s), and how will you use it in your application?**
 
+We plan on allowing users to create accounts on our website in order to streamline user registrations, and authentication we plan on using Django Allauth, a free and opensource API that manages account registrations, email verifications, forgotton password recovery, and sign ups through third-party social media, such as signing up with an google account. This will manage our email verifications for account creation on our website.    
+
 **Q4: Does your API key has limitations such as rate limits or downtime? How are you going to deal with that?**
+
+Full documentation for rate limits for django-allauth is located here:https://docs.allauth.org/en/latest/account/rate_limits.html 
+In general rate limits are optional and can be disabled in django allauth, but we don't intend to do that as our rate limits exists as a security measure, for example thier is a rate limit of 5 password resets per user per minute or 10 failed logins per minute per ip address in order to prevent system abuse.  
 
 ## Authentication and Security
 
